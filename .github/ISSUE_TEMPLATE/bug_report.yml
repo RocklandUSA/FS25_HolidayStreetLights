@@ -1,0 +1,80 @@
+name: Bug Report
+description: Report something that is not working the way the README says it should.
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. The fields below are the minimum needed to act on the report.
+  - type: input
+    id: mod_version
+    attributes:
+      label: Seasonal Street Lights version
+      description: Shown in the in-game mod menu.
+      placeholder: "1.0.0.0"
+    validations:
+      required: true
+  - type: input
+    id: game_version
+    attributes:
+      label: Farming Simulator 25 version
+      placeholder: "1.25.0.0"
+    validations:
+      required: true
+  - type: input
+    id: map
+    attributes:
+      label: Map
+      placeholder: "Riverbend Springs"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where does the bug happen?
+      multiple: true
+      options:
+        - Singleplayer
+        - Multiplayer (player-hosted)
+        - Multiplayer (dedicated server)
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead? A screenshot helps a lot for decorations that hang wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: scan
+    attributes:
+      label: hslScan output (for street lights that are not decorated)
+      description: Open the developer console, run `hslScan` and paste the lines it prints.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: client_log
+    attributes:
+      label: log.txt excerpt
+      description: |
+        Located at `Documents\My Games\FarmingSimulator2025\log.txt`. Paste the lines containing `[HolidayStreetLights]`, `Error:` or `Warning:` from the session where the bug occurred.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Other active mods
+      description: Especially maps and mods that change street lights.
+    validations:
+      required: false
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Pre-flight
+      options:
+        - label: I searched the existing issues and did not find a duplicate.
+          required: true

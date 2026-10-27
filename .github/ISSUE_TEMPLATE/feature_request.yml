@@ -1,0 +1,22 @@
+name: Feature Request
+description: Suggest a new theme, design or improvement.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Seasonal Street Lights stays purely visual and family friendly. Ideas for new themes and designs are welcome.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: A new theme, a new design for an existing theme, a map whose street lights are not decorated, a setting you are missing?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?
+    validations:
+      required: false
