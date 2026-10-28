@@ -2,19 +2,24 @@
 
 # Seasonal Street Lights
 
-**Decorate the whole town for the season - in one click.**
+**Your whole town, dressed for every season, without placing a single decoration.**
 
 A Farming Simulator 25 mod by RocklandUSA Gaming. It hangs illuminated decorations on the map's own street lights: snowflakes, trees, bells and gift boxes at Christmas, fireworks at New Year, lanterns for Lunar New Year, masks and feathers for Carnival, tulips in spring, a summer fair, a harvest festival, friendly pumpkins and ghosts at Halloween, and a Farm life set for any time of year.
 
 > **Download:** Seasonal Street Lights is distributed only through the official GIANTS ModHub. This repository holds the documentation and the issue tracker. The mod files are not available here.
+>
+> **Mod file:** `FS25_SeasonalStreetLights.zip`
 
 ## Features
 
 - **10 themes, 41 designs.** Every design is a real light display: rope lights that glow and bulbs that twinkle on their own.
 - **Lit like the street lights.** Softly lit by day and bright at night. They switch on with the map's street lights.
-- **No placing.** The decorations are found automatically on every street light of the base-game maps, mounted under the lamp and facing the road. Lamp posts with lamps on several sides get a matching pair.
+- **No placing.** The decorations are found automatically on every street light of the map, mounted under the lamp and facing the road. Lamp posts with lamps on several sides get a matching pair.
+- **Your own street lights too.** Street lights bought from the shop are decorated as soon as they are placed.
+- **Hemisphere-aware.** The calendar reads the map's latitude and flips the seasons south of the equator.
 - **The same for everyone.** In multiplayer every player sees the same decoration on the same pole.
 - **Purely visual.** No collision and no effect on traffic or vehicles.
+- **Previews in the menu.** Every theme has a preview picture in Mod Settings (F6).
 - **Languages:** English, German, French and Polish.
 
 ## Themes
@@ -54,7 +59,7 @@ Only one theme shows at a time. In multiplayer only the server admin can change 
 
 ## Maps
 
-The decorations attach to the base-game street-light models, so they work on the base-game maps (Riverbend Springs, Zielonka, Hutan Pantai, Kinlaig) and on the Beans & Alpacas map Catuai. Mod maps that reuse the base-game street lights are decorated too. Maps with their own custom lamp models are left undecorated.
+The decorations attach to the game's own street-light models, so they work on Riverbend Springs, Zielonka and Hutan Pantai, plus the Kinlaig and Catuai expansion maps. Mod maps that reuse the base-game street lights are decorated too. Maps with their own custom lamp models are left undecorated.
 
 To check a map, open the developer console and run `hslScan`. It lists every street-lamp type on the map and whether it is decorated. If a lamp type on your map is not matched, please open an issue with that output.
 
@@ -77,7 +82,7 @@ Open an [issue](../../issues/new/choose) and include:
 
 - the mod version and the map
 - singleplayer or multiplayer
-- the lines containing `[HolidayStreetLights]`, `Error` or `Warning` from `Documents\My Games\FarmingSimulator2025\log.txt`
+- the lines containing `[SeasonalStreetLights]`, `Error` or `Warning` from `Documents\My Games\FarmingSimulator2025\log.txt`
 
 ## License
 

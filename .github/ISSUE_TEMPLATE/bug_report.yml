@@ -60,7 +60,7 @@ body:
     attributes:
       label: log.txt excerpt
       description: |
-        Located at `Documents\My Games\FarmingSimulator2025\log.txt`. Paste the lines containing `[HolidayStreetLights]`, `Error:` or `Warning:` from the session where the bug occurred.
+        Located at `Documents\My Games\FarmingSimulator2025\log.txt`. Paste the lines containing `[SeasonalStreetLights]`, `Error:` or `Warning:` from the session where the bug occurred.
       render: shell
     validations:
       required: false
